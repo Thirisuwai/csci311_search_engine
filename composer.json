@@ -26,7 +26,10 @@
         "symfony/monolog-bundle": "^2.8",
         "sensio/distribution-bundle": "^5.0",
         "sensio/framework-extra-bundle": "^3.0.2",
-        "incenteev/composer-parameter-handler": "^2.0"
+        "incenteev/composer-parameter-handler": "^2.0",
+        "symfony/console": "^3.0",
+        "fabpot/goutte": "^3.1",
+        "symfony/dom-crawler": "^3.0"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
@@ -53,7 +56,8 @@
     "config": {
         "platform": {
             "php": "5.5.9"
-        }
+        },
+        "secure-http": false
     },
     "extra": {
         "symfony-app-dir": "app",
@@ -65,5 +69,11 @@
         "incenteev-parameters": {
             "file": "app/config/parameters.yml"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packagist.org"
+        }
+    ]
 }
